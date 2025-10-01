@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-blue-main: rgb(7, 25, 82);
+    --color-cream-main: rgb(233, 223, 195);
+
+    --font-aclonica: Aclonica, serif;
+    --font-montserrat: Montserrat, sans-serif;
+
+    --animate-scroll-right: scroll-right 20s linear infinite;
+    --animate-scroll-left: scroll-left 20s linear infinite;
+
+    @keyframes scroll-right {
+        0% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+body {
+    background-color: var(--color-blue-main);
+    font-family: var(--font-montserrat);
+}

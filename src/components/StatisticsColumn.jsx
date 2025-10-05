@@ -14,7 +14,7 @@ const statistics = [
 const StatisticsColumn = () => {
   return (
     <>
-      <div className='grid grid-cols-6 gap-1 font-aclonica text-blue-main'>
+      <div className='lg:grid grid-cols-6 gap-1 font-aclonica text-blue-main hidden'>
         {statistics.slice(0, 3).map((statistic) => (
           <div key={statistic.id} className='col-span-2 w-[190px] flex flex-col justify-center items-center gap-2 bg-cream-main p-6 pt-8 rounded'>
             <h2 className='text-4xl'>{statistic.data}</h2>
@@ -31,6 +31,14 @@ const StatisticsColumn = () => {
           <div key={statistic.id} className='col-span-2 w-[190px] flex flex-col justify-center items-center gap-2 bg-cream-main p-6 pt-8 rounded'>
             <h2 className='text-4xl'>{statistic.data}</h2>
             <h3 className='text-center leading-5'>{statistic.desc}</h3>
+          </div>
+        ))}
+      </div>
+      <div className='grid grid-cols-2 gap-1 font-aclonica text-blue-main lg:hidden'>
+        {statistics.map((statistic) => (
+          <div key={statistic.id} className='flex flex-col justify-center items-center gap-1 bg-cream-main p-4 rounded'>
+            <h2 className='text-xl'>{statistic.data}</h2>
+            <h3 className='text-sm text-center'>{statistic.desc}</h3>
           </div>
         ))}
       </div>

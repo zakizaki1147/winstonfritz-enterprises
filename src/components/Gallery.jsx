@@ -16,13 +16,13 @@ const Gallery = () => {
 
   return (
     <>
-      <div className='flex justify-center items-center gap-2'>
+      <div className='flex justify-center items-center gap-1 lg:gap-2'>
         {galleryImages.map((galleryImage) => (
           <div
             key={galleryImage.id}
             onClick={() => setActiveImage(galleryImage.id)}
             className={`rounded overflow-hidden transition-all duration-300 ease-in-out shadow
-              ${activeImage === galleryImage.id ? 'w-[560px] h-[360px]' : 'w-[60px] h-[360px] hover:scale-[102%] cursor-pointer'}
+              ${activeImage === galleryImage.id ? 'w-[180px] h-[160px] lg:w-[560px] lg:h-[360px]' : 'w-[28px] h-[160px] lg:w-[60px] lg:h-[360px] hover:scale-[102%] cursor-pointer'}
             `}
           >
             <img src={galleryImage.image} alt="gallery" className='w-full h-full object-cover' />

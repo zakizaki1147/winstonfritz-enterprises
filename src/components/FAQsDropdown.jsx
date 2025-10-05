@@ -19,14 +19,14 @@ const FAQsDropdown = () => {
 
   return (
     <>
-      <div className='w-[1000px] flex flex-col gap-1 rounded overflow-hidden'>
+      <div className='lg:w-[1000px] flex flex-col gap-1 rounded overflow-hidden'>
         {questionsAnswers.map((questionAnswer) => (
           <div key={questionAnswer.id} id={`faq-${questionAnswer.id}`}>
             <div
               className='bg-blue-main p-4 text-cream-main cursor-pointer flex justify-between items-center'
               onClick={() => handleToggle(questionAnswer.id)}
             >
-              <h3 className='font-aclonica text-lg'>{questionAnswer.question}</h3>
+              <h3 className='font-aclonica text-sm lg:text-lg'>{questionAnswer.question}</h3>
               <ChevronDown className={`transition-transform duration-300
                 ${activeQuestionId === questionAnswer.id ? 'rotate-180' : ''}
               `} />
@@ -37,7 +37,7 @@ const FAQsDropdown = () => {
                 <ReactMarkdown
                   components={{
                     p: ({ node, ...props}) => (
-                      <p className='font-medium text-blue-main text-sm leading-tight' {...props} />
+                      <p className='font-medium text-blue-main text-xs lg:text-sm leading-tight' {...props} />
                     )
                   }}
                 >

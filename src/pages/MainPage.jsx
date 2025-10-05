@@ -17,7 +17,7 @@ export const MainPage = () => {
     <>
       <NavigationBar />
       <HeroSection />
-      <AboutSection id='aboutUs' />
+      <AboutSection />
       <ProductsServicesSection />
       <ExhibitionHallSection />
       <IntegratedComplexSection />

@@ -19,19 +19,20 @@ const productsServicesImages = [
 const ProductsServicesSection = () => {
   return (
     <>
-      <section className='w-full h-[2016.5px] py-12 flex justify-center items-center gap-40'>
-        <div className='h-full bg-cream-main px-8 py-10 flex flex-col justify-center items-center gap-6 rounded'>
+      <section className='w-full lg:h-[2016.5px] p-10 lg:py-12 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-40'>
+        <div className='h-full bg-cream-main px-8 py-10 lg:flex flex-col justify-center items-center gap-6 rounded hidden'>
           <div className='flex-1 border-2 border-blue-main' />
           <h2 className='w-8 font-aclonica text-blue-main text-4xl text-center wrap-break-word leading-snug'>PRODUCTS <span className='text-cream-main'>&</span> & <span className='text-cream-main'>&</span> SERVICES</h2>
           <div className='flex-1 border-2 border-blue-main' />
         </div>
-        <div className='flex flex-col justify-center items-center gap-6'>
+        <h2 className='font-aclonica text-lg text-cream-main tracking-wide lg:hidden'>PRODUCTS & SERVICES</h2>
+        <div className='grid grid-cols-2 lg:flex lg:flex-col justify-center items-center gap-1 lg:gap-6'>
           {productsServicesImages.map((productsServicesImage) => (
             <ProductsServicesCard key={productsServicesImage.id} productsServicesImage={productsServicesImage} />
           ))}
         </div>
       </section>
-      <div className='w-full p-16 flex flex-col justify-center items-center gap-4 bg-cream-main text-blue-main font-aclonica'>
+      <div className='w-full h-screen lg:h-auto p-16 flex flex-col justify-center items-center gap-4 bg-cream-main text-blue-main font-aclonica'>
         <h1 className='text-4xl text-center leading-tight tracking-widest'>WANT TO SEE OUR PRODUCTS DIRECTLY?</h1>
       </div>
     </>

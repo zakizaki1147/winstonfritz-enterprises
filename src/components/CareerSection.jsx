@@ -35,9 +35,10 @@ const CareerSection = () => {
         <div className='w-full h-fit'>
           <Slider sliderImages={sliderUpImages} direction='right' />
         </div>
-        <div className='pt-2 h-full font-aclonica text-cream-main flex flex-col justify-center items-center gap-2'>
-          <h1 className='text-[40px] text-center tracking-widest'>BE A PART OF THE WINSTON-FRITZ FAMILY!</h1>
-          <h2 className='flex text-lg tracking-wider'>Send us your best CV <span className='flex justify-center items-center gap-1 ml-1.5 hover:underline underline-offset-2 active:opacity-50 cursor-pointer'>here <ArrowUpRight strokeWidth={2.5} /></span></h2>
+        <div className='lg:pt-2 h-full font-aclonica text-cream-main flex flex-col justify-center items-center gap-8 lg:gap-2 p-10'>
+          <h1 className='hidden lg:block text-[40px] text-center tracking-widest lg:mt-8'>BE A PART OF THE WINSTON-FRITZ ENTERPRISES FAMILY!</h1>
+          <h1 className='lg:hidden text-3xl text-center leading-relaxed tracking-widest'>BE A <br /> PART OF THE <br /> WINSTON-FRITZ <br /> ENTERPRISES <br /> FAMILY!</h1>
+          <h2 className='flex lg:text-lg tracking-wider'>Send us your best CV <span className='flex justify-center items-center gap-1 ml-1.5 hover:underline underline-offset-2 active:opacity-50 cursor-pointer'>here <ArrowUpRight strokeWidth={2.5} /></span></h2>
         </div>
         <div className= 'w-full h-fit'>
           <Slider sliderImages={sliderBottomImages} direction='left' />

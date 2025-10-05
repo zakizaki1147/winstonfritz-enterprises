@@ -13,9 +13,9 @@ const locationImages = [
 const LocationsSection = () => {
   return (
     <>
-      <section className='w-full h-screen flex flex-col justify-center items-center gap-8'>
-        <h2 className='text-cream-main text-2xl font-aclonica'>OUR LOCATIONS</h2>
-        <div className='flex justify-center items-center gap-8'>
+      <section className='w-full lg:h-screen flex flex-col justify-center items-center gap-8 px-10 py-20 lg:p-0'>
+        <h2 className='text-cream-main text-lg lg:text-2xl font-aclonica'>OUR LOCATIONS</h2>
+        <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
           {locationImages.map((locationImage) => (
             <LocationsCard key={locationImage.id} locationImage={locationImage} />
           ))}

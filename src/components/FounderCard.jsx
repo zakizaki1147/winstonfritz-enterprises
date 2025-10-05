@@ -5,8 +5,8 @@ const FounderCard = ({ siluetImage }) => {
     <>
       <div className='text-blue-main rounded overflow-hidden rounded-t-[40px] hover:scale-[102%] shadow transition'>
         <div className='h-80 bg-gradient-to-t from-cream-main via-cream-main to-blue-main flex justify-end items-end relative'>
-          <div className='w-72'>
-            <img src={siluetImage.src} alt="" />
+          <div className='lg:w-72'>
+            <img src={siluetImage.src} alt="founder" />
           </div>
           <div className='absolute w-full h-1/3 bg-gradient-to-t from-cream-main to-transparent'></div>
         </div>
